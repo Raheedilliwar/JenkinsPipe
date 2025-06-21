@@ -2,8 +2,8 @@ pipeline{
     agent any
 
     parameters {
-        string (name:"IMAGE_NAME" , defaultValue: "myapp")
-        string (name:"IMAGE_TAG" , defaultValue: "latest")
+        string (name:'IMAGE_NAME' , defaultValue:'myapp')
+        string (name:'IMAGE_TAG' , defaultValue:'latest')
         credentials (name:'Docker' , defaultValue:'Docker')
     }
     environment {

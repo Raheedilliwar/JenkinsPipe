@@ -7,7 +7,7 @@ pipeline{
         credentials (name:'Docker' , defaultValue:'Docker')
     }
     environment {
-        IMAGE = "${params.IMAGE_NAME}: ${params.IMAGE_TAG}"
+        IMAGE = "${params.IMAGE_NAME}:${params.IMAGE_TAG}"
         DOCKER_REGISTRY = "docker.io"
     }
     stages{
